@@ -3,6 +3,12 @@
   --background-title: #bf4732;
 }
 
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .title {
   width: 400px;
   height: 100px;

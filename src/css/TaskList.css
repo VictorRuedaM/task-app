@@ -1,0 +1,17 @@
+.main-list {
+  width: 700px;
+  min-height: 500px;
+  background-color: #00ffff;
+  padding: 25px;
+  margin: 15px;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+h1 {
+  color: #81017b;
+  font-size: 28px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  margin: 20px 0;
+}
