@@ -7,7 +7,7 @@ function TaskList() {
   return (
     <div className='main-list'>
       <h1>My Task</h1>
-      <Task text={'Learning ReactJS with freecodecamp'}/>
+      <Task text={'Learning ReactJS with freecodecamp'} completed={false}/>
 
     </div>
   )
