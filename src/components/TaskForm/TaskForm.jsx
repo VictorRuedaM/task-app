@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {v4 as uuidv4} from 'uuid';
 import '../../css/TaskForm.css';
 
 
@@ -15,11 +16,15 @@ function TaskForm({text}) {
 
   const handleSend = (e) => {
 
+    e.preventDefault();
+    
     const newTask = {
-      id: '777',
-      text: input
+      id: uuidv4(),
+      text: input,
+      completed: false
       
     }
+    console.log('enviando form', newTask);
   };
 
   return (
