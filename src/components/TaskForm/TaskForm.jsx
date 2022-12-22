@@ -4,7 +4,7 @@ import '../../css/TaskForm.css';
 
 
 
-function TaskForm({text}) {
+function TaskForm(props) {
 
   const [input, setInput] = useState('');
 
@@ -24,7 +24,8 @@ function TaskForm({text}) {
       completed: false
       
     }
-    console.log('enviando form', newTask);
+    props.onSubmit(newTask);
+    setInput('');
   };
 
   return (
@@ -34,6 +35,7 @@ function TaskForm({text}) {
         type="text" 
         name="text" 
         placeholder='Write a task'
+        value={input}
         onChange={handleChange}
         />
         <button className='task-button'>Add task</button>
